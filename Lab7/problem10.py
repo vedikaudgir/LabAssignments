@@ -5,6 +5,9 @@
 #Author - Vedika Udgir
 
 def append_item(item, item_list = []):
+    if item_list is None:
+        item_list = []
+        # if the list was not defined it will define one.
     item_list.append(item)
     return item_list
 

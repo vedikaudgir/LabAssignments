@@ -9,4 +9,4 @@ def faltuFunction():
     var2 = "Gojo Satoru"
     var3 = {"I", "am", "Gojo"}
 
-print(detectLocal(faltuFunction))       
+print(detectLocal(faltuFunction))
