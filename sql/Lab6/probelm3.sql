@@ -1,0 +1,1 @@
+SELECT * FROM student WHERE Marks > (SELECT AVG(Marks) FROM Student);

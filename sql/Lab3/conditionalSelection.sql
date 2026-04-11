@@ -1,0 +1,1 @@
+SELECT * FROM studentdb.student WHERE Marks > 80;
