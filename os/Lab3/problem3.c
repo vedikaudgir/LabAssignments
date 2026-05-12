@@ -7,13 +7,13 @@ int main()
 
     if (pid == 0)
     {
-        printf("Child PID = %d\n", getpid());
-        printf("Parent PID = %d\n", getppid());
+        printf("Child if wala PID = %d\n", getpid());
+        printf("Parent if wala PID = %d\n", getppid());
     }
     else
     {
-        printf("Parent PID = %d\n", getpid());
-        printf("Child PID = %d\n", pid);
+        printf("Parent else PID = %d\n", getpid());
+        printf("Child else PID = %d\n", pid);
     }
 
     return 0;

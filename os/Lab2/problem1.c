@@ -3,7 +3,7 @@
 
 int main ()
 {
-if (fork () ==0)
+if (fork () == 0)
 {
     fork ();
     printf("A\n");

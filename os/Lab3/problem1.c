@@ -16,15 +16,15 @@ int main()
     printf("Enter logical address (decimal): ");
     scanf("%d", &logical);
 
-    int pageSize = 1024;        // 1 KB
-    int offsetBits = 10;        // log2(1024)
+    int pageSize = 1024;
+    int offsetBits = 10;
 
     int p1 = logical / (pageSize * 4);
     int p2 = (logical / pageSize) % 4;
     int offset = logical % pageSize;
 
     int frame = page_table[p1][p2];
-    int physical = frame * pageSize + offset;
+    int physical = (frame * pageSize) + offset;
 
     printf("\np1 = %d", p1);
     printf("\np2 = %d", p2);
