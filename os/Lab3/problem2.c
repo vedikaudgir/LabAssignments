@@ -18,7 +18,7 @@ int main()
     printf("\np2 = %d", p2);
     printf("\noffset = %d", offset);
 
-    unsigned long frame = p1 * 1024 + p2; // simulated
+    unsigned long frame = p1 * 1024 + p2;
     unsigned long physical = (frame << offsetBits) | offset;
 
     printf("\nPhysical Address = %lu\n", physical);
